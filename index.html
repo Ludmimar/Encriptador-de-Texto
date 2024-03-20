@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;480&display=swap" rel="stylesheet">
+    <meta name="author" content="Martos Ludmila">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="./img/Logo.png" alt="logo alura" class="logo de alura">
+    </header>
+    
+    <main>
+        <section>
+            <textarea id="textoIngresado" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button onclick="EncriptarDesencriptar('encriptar')" class="btn-encriptar">Encriptar</button>
+                <button onclick="EncriptarDesencriptar('desencriptar')" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="mensaje" class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button onclick="copyText()" class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+    
+    </body>
+    </html>
